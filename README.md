@@ -7,3 +7,7 @@ In this project, I used React, Firebase, jQuery, and CSS to build a seamless and
 
 /---------
 It is responsive to different devices.
+![Screenshot 2024-11-30 102245](https://github.com/user-attachments/assets/a539319a-2bd3-475e-9571-643077379c6a)
+
+![Screenshot 2024-11-30 100742](https://github.com/user-attachments/assets/512f3eb1-cf80-430f-b3b0-356ab57f2a31)
+![Screenshot 2024-11-30 100849](https://github.com/user-attachments/assets/276d3b9c-befa-4aae-89ce-ae12840dd412)
