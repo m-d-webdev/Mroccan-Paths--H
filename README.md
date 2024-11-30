@@ -4,3 +4,6 @@ A website that provides essential services for tourists, including information o
 /-----------------------------
 
 In this project, I used React, Firebase, jQuery, and CSS to build a seamless and user-friendly interface. The platform also includes the possibility to contact people directly via their WhatsApp or email for personalized assistance.
+
+/---------
+It is responsive to different devices.
