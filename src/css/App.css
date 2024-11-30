@@ -1,0 +1,452 @@
+.containerApp {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  /* position: sticky; */
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.btnShowLisrServices{
+  display: none;
+}
+/* ----- */
+.sideBare p {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.sliderHoverDiv {
+  background-color: var(--main-color-3);
+  position: absolute;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .9s;
+  z-index: 2;
+  height: 20px;
+  border-radius: 5px;
+  margin: auto;
+  left: 0;
+}
+
+.sideBare {
+  padding: 10px;
+  border-radius: 10px;
+
+  margin-right: 10px;
+  background-color: var(--main-color);
+  width: 200px;
+  /* height: 800px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 60px;
+  z-index: 3;
+  overflow: auto;
+}
+
+/* .cmpServeces:hover::after{
+  width: 100%;
+}
+.cmpServeces::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  width:3px;
+  height: 100%;
+  background-color: var(--main-color-3);
+  z-index: 1;
+  transition: .2s;
+} */
+.cmpServeces svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+  stroke-width: 20px !important;
+  z-index: 3;
+}
+
+/* .cmpServeces:hover{
+  transform: scale(1.2);
+} */
+.cmpServeces {
+  width: 100%;
+  position: relative;
+  /* height: 50px; */
+  background-color: var(--main-color-2);
+  padding: 10px;
+  padding-left: 10px;
+  transition: .3s;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.cmpServeces h2 {
+  z-index: 3;
+  text-align: center;
+}
+
+.cmpServeces.active svg {
+  fill: var(--text-color-2);
+}
+
+.cmpServeces.active h2 {
+  color: var(--text-color-2) !important;
+
+}
+
+.cmpServeces.active {
+  z-index: 3;
+  background-color: var(--main-color-3);
+}
+
+/* ****** */
+.cntMainCmp {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 10px;
+  /* max-width: 1500px; */
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.ContactDetail p {
+  margin-top: 3px;
+}
+
+.ContactDetail p strong {
+  margin: 5px;
+}
+
+.ContactDetail {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.cntConatactViaMedia a:hover::after {
+  height: 100%;
+}
+
+.cntConatactViaMedia a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 6px;
+  z-index: 1;
+  background-color: var(--main-color-3);
+  transition: .2s;
+}
+
+.cntConatactViaMedia a:hover svg,
+.cntConatactViaMedia a:hover p {
+  color: var(--text-color-2);
+  z-index: 2;
+  stroke: var(--text-color-2);
+}
+
+.cntConatactViaMedia a {
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.cntConatactViaMedia a svg {
+  fill: none;
+  margin-bottom: 10px;
+}
+
+.cntConatactViaMedia {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 1000px;
+}
+
+/* ------------------ */
+.aboutUselem p {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.aboutUselem {
+  width: 100%;
+
+}
+
+
+@media screen and (max-width : 1000px) {
+  .containerApp {
+    margin-top:10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    /* position: sticky; */
+  }
+
+  .App {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .btnShowLisrServices p{
+    margin-left: 10px;
+    color: var(--text-color-2);
+    }
+  .btnShowLisrServices svg{
+    fill: var(--text-color-2);
+  }
+  .btnShowLisrServices:focus+.sideBare{
+    transition: .2s;
+    display: flex;
+  }
+  .btnShowLisrServices{
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: var(--main-color-3);
+  }
+
+  /* ----- */
+  .sideBare p {
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+
+  .sliderHoverDiv {
+    display: none !important;
+  }
+
+  .sideBare:active{
+    display: flex;
+  }
+  
+  .sideBare {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: var(--main-color);
+    width: 250px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 160px;
+    z-index: 3;
+    overflow: auto;
+    transition: .3s;
+    left: 0;
+    position: absolute;
+    display: none;
+    animation: aniamteListServ .4s ease;
+  }
+@keyframes aniamteListServ {
+  0%{
+    left: -200px;
+  }
+}
+  .cmpServeces svg {
+    width: 30px ;;
+    height: 30px ;
+    margin-bottom: 5px;
+    stroke-width: 20px !important;
+    z-index: 3;
+  }
+
+  /* .cmpServeces:hover{
+    transform: scale(1.2);
+  } */
+  .cmpServeces {
+    width: 100%;
+    position: relative;
+    /* height: 50px; */
+    background-color: var(--main-color-2);
+    padding: 5px;
+    padding-left: 10px;
+    transition: .3s;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+
+  .cmpServeces h2 {
+    z-index: 3;
+    text-align: center;
+  }
+
+  .cmpServeces.active svg {
+    fill: var(--text-color-2);
+  }
+
+  .cmpServeces.active h2 {
+    color: var(--text-color-2) !important;
+
+  }
+
+  .cmpServeces.active {
+    z-index: 3;
+    background-color: var(--main-color-3);
+  }
+
+  /* ****** */
+  .cntMainCmp {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 2px;
+    /* max-width: 1500px; */
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+  }
+
+  footer p{
+    font-size: 9px !important;
+  }
+  footer h2{
+    font-size: 9px !important;
+  }
+  footer {
+    width: 100%;
+    margin-top: 100px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .ContactDetail p {
+    margin-top: 3px;
+  }
+
+  .ContactDetail p strong {
+    margin: 5px;
+  }
+
+  .ContactDetail {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .cntConatactViaMedia a:hover::after {
+    height: 100%;
+  }
+
+  .cntConatactViaMedia a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 6px;
+    z-index: 1;
+    background-color: var(--main-color-3);
+    transition: .2s;
+  }
+
+  .cntConatactViaMedia a:hover svg,
+  .cntConatactViaMedia a:hover p {
+    color: var(--text-color-2);
+    z-index: 2;
+    stroke: var(--text-color-2);
+  }
+
+  .cntConatactViaMedia a {
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+  }
+
+  .cntConatactViaMedia a svg {
+    fill: none;
+    margin-bottom: 10px;
+  }
+
+  .cntConatactViaMedia {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1000px;
+  }
+
+  /* ------------------ */
+  .aboutUselem p {
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .aboutUselem {
+    width: 100%;
+
+  }
+}

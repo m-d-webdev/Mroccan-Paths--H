@@ -1,0 +1,205 @@
+.CNT_profilePic .lblSelectProfPic svg {
+    fill: #fff;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.CNT_profilePic .lblSelectProfPic {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    color: #fff;
+    background-color: rgb(15, 91, 255);
+    border-radius: 20px;
+}
+
+.CNT_profilePic #btnSave svg {
+    fill: #fff;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.CNT_profilePic #btnSave {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    color: #fff;
+    background-color: rgb(15, 91, 255);
+    border-radius: 20px;
+}
+
+.CNT_profilePic {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 800px;
+    padding: 10px;
+    position: relative;
+}
+
+.CNT_profilePic form {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    filter: drop-shadow(0 0 10px var(--filter-color));
+    position: relative;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.DefaultImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 15px;
+}
+
+.btnSkipAddingProfile svg {
+    fill: var(--text-color-2);
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.btnSkipAddingProfile {
+    position: absolute;
+    display: flex;
+    ;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    background-color: var(--main-color-3);
+    padding: 5px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    color: var(--text-color-2);
+    cursor: pointer;
+}
+
+.Svg_hane {
+    height: 400px;
+}
+
+@media screen and (max-width : 1000px) {
+    .CNT_profilePic .lblSelectProfPic svg {
+        fill: #fff;
+        margin-right: 15px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .CNT_profilePic .lblSelectProfPic {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        color: #fff;
+        background-color: rgb(15, 91, 255);
+        border-radius: 20px;
+    }
+
+    .CNT_profilePic #btnSave svg {
+        fill: #fff;
+        margin-right: 15px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .CNT_profilePic #btnSave {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        color: #fff;
+        background-color: rgb(15, 91, 255);
+        border-radius: 20px;
+    }
+
+    .CNT_profilePic {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        flex-direction: column-reverse;
+        min-height: 800px;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .CNT_profilePic form {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: var(--main-color);
+        filter: drop-shadow(0 0 10px var(--filter-color));
+        position: relative;
+        height:600px !important;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    .DefaultImg {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 15px;
+    }
+
+    .btnSkipAddingProfile svg {
+        fill: var(--text-color-2);
+        margin-right: 15px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .btnSkipAddingProfile {
+        position: absolute;
+        display: flex;
+        ;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        left: 10px;
+        background-color: var(--main-color-3);
+        padding: 5px;
+        width: 90px;
+        border-radius: 5px;
+        border: none;
+        color: var(--text-color-2);
+        cursor: pointer;
+    }
+
+    .Svg_hane {
+        height: 400px;
+    }
+
+}

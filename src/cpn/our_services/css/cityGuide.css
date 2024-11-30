@@ -1,0 +1,153 @@
+.spanInfoDetailCity p strong{
+    font-weight: 600;
+    margin-right: 8px;
+}
+.spanInfoDetailCity p svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.spanInfoDetailCity p {
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.spanInfoDetailCity h1 svg{
+    width: 20px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    fill: blue;
+    height: 20px;
+}
+.spanInfoDetailCity h1{
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    max-width: 70%;
+}
+.spanInfoDetailCity img{
+    max-height: 200px;
+    max-width: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.spanInfoDetailCity{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 300px;
+    align-items: flex-start;
+    width: 100%;
+}
+.cntCityGuide{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    padding: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    display: flex;
+}
+.CityChoosedName{
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* border-bottom: solid 1px black; */
+    width: auto;
+}
+.btnMoreGiudes{
+    margin-top: 20px;
+    background-color: var(--blue-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) { 
+    .spanInfoDetailCity p strong{
+        font-weight: 600;
+        margin-right: 8px;
+        font-size: 25px !important;
+    }
+    .spanInfoDetailCity p svg{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .spanInfoDetailCity p {
+        margin-left: 15px;
+        margin-top: 25px;
+        display: flex;
+        max-width: none;
+        justify-content: start;
+        align-items: start;
+    }
+    .spanInfoDetailCity h1 svg{
+        width: 30px !important;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        fill: blue;
+        height: 20px;
+    }
+    .spanInfoDetailCity h1{
+        margin-bottom: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        max-width: 70%;
+    }
+    .spanInfoDetailCity img{
+        max-height: 200px;
+        max-width: 30%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .spanInfoDetailCity{
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 100px;
+        min-height: 300px;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .cntCityGuide{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        padding: 20px;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        display: flex;
+    }
+    .CityChoosedName{
+        font-weight: 600;
+        margin-bottom: 10px;
+        /* border-bottom: solid 1px black; */
+        width: auto;
+    }
+    .btnMoreGiudes{
+        margin-top: 20px;
+        background-color: var(--blue-color);
+        color: white;
+        font-size: 25px !important;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}

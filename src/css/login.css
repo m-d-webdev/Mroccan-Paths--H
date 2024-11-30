@@ -1,0 +1,385 @@
+.cnt-loging-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 800px;
+    padding: 10px;
+}
+
+.CTN_login {
+    position: relative;
+    /* margin: auto; */
+    border-radius: 10px;
+    padding: 20px;
+    height: 700px;
+    /* border: solid 1px var(--border-color); */
+    filter: drop-shadow(0 0 10px var(--filter-color));
+    width: 50%;
+    background-color: var(--main-color);
+    min-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lastStepImg {
+    width: 300px;
+}
+
+.CTN_Confirmlogin {
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+    /* border: solid 1px var(--border-color);
+     */
+    background-color: var(--main-color);
+    max-width: 800px;
+    filter: drop-shadow(0 0 200px var(--filter-color));
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cntInptComplogin input:not(:placeholder-shown)~.labelLoginFomr,
+.cntInptComplogin input:focus~.labelLoginFomr {
+    color: rgba(28, 81, 255, 0.763) !important;
+    transform: translateY(-12px);
+}
+
+.cntInptComplogin input:not(:placeholder-shown)+svg,
+.cntInptComplogin input:focus+svg {
+    fill: rgb(28, 81, 255) !important;
+    ;
+
+}
+
+.cntInptComplogin input:not(:placeholder-shown),
+.cntInptComplogin input:focus {
+    color: var(--text-color) !important;
+    border: solid 1px var(--border-color-focus) !important;
+}
+
+.cntInptComplogin input {
+    font-weight: 500;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 8px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    border: solid 1px var(--border-color);
+}
+
+
+.cntInptComplogin input.errInpt:not(:placeholder-shown) {
+    border: solid 1px red !important;
+}
+
+.cntInptComplogin input.errInpt2:not(:placeholder-shown) {
+    border: solid 1px red !important;
+}
+
+.cntInptComplogin input.errInpt:not(:placeholder-shown)+svg,
+.cntInptComplogin input.errInpt:focus+svg,
+.cntInptComplogin input.errInpt:not(:placeholder-shown)~.labelLoginFomr,
+.cntInptComplogin input.errInpt:focus~.labelLoginFomr {
+    fill: rgb(255, 28, 28) !important;
+    ;
+    color: red !important;
+
+}
+
+.cntInptComplogin input.errInpt2:not(:placeholder-shown)+svg,
+.cntInptComplogin input.errInpt2:focus+svg,
+.cntInptComplogin input.errInpt2:not(:placeholder-shown)~.labelLoginFomr,
+.cntInptComplogin input.errInpt2:focus~.labelLoginFomr {
+    fill: rgb(255, 28, 28) !important;
+    ;
+    color: red !important;
+
+}
+
+
+
+.cntInptComplogin label {
+    position: absolute;
+    left: 50px;
+    transition: .2s ease;
+    font-weight: 600;
+}
+
+.cntInptComplogin svg {
+    position: absolute;
+    left: 8px;
+    font-weight: 600;
+}
+
+.cntInptComplogin {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.error_empty input,
+.error_empty label,
+.error_empty svg {
+    color: red !important;
+    fill: red !important;
+}
+
+.svgShowPass,
+.svgHidePass {
+    width: 20px;
+    height: 20px;
+    position: relative !important;
+    margin: 0 !important;
+    display: none;
+    left: 0 !important;
+}
+
+.cntButtonsShoHidePass {
+    position: absolute;
+    display: none;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+.connectWidthFireBase button img {
+    width: 25px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.connectWidthFireBase button:hover {
+    border: solid 1px var(--border-color);
+}
+
+.connectWidthFireBase button {
+    width: 100%;
+    padding: 7px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.connectWidthFireBase {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .cnt-loging-page {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 1500px;
+        padding: 10px;
+    }
+
+    .img_vetrasd {
+        width: 600px;
+    }
+
+    .CTN_login {
+        position: relative;
+        /* margin: auto; */
+        border-radius: 10px;
+        padding: 20px;
+        height: 700px;
+        /* border: solid 1px var(--border-color); */
+        filter: drop-shadow(0 0 10px var(--filter-color));
+        width: 90%;
+        background-color: var(--main-color);
+        min-width: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lastStepImg {
+        width: 300px;
+    }
+
+    .CTN_Confirmlogin {
+        position: relative;
+        border-radius: 10px;
+        padding: 20px;
+        height: 400px;
+        width: 100%;
+        /* border: solid 1px var(--border-color);
+     */
+        background-color: var(--main-color);
+        max-width: 800px;
+        filter: drop-shadow(0 0 200px var(--filter-color));
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cntInptComplogin input:not(:placeholder-shown)~.labelLoginFomr,
+    .cntInptComplogin input:focus~.labelLoginFomr {
+        color: rgba(28, 81, 255, 0.763) !important;
+        transform: translateY(-12px);
+    }
+
+    .cntInptComplogin input:not(:placeholder-shown)+svg,
+    .cntInptComplogin input:focus+svg {
+        fill: rgb(28, 81, 255) !important;
+        ;
+
+    }
+
+    .cntInptComplogin input:not(:placeholder-shown),
+    .cntInptComplogin input:focus {
+        color: var(--text-color) !important;
+        border: solid 1px var(--border-color-focus) !important;
+    }
+
+    .cntInptComplogin input {
+        font-weight: 500;
+        width: 100%;
+        background-color: var(--main-color);
+        padding: 8px;
+        border-radius: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 25px;
+        border: solid 1px var(--border-color);
+    }
+
+
+    .cntInptComplogin input.errInpt:not(:placeholder-shown) {
+        border: solid 1px red !important;
+    }
+
+    .cntInptComplogin input.errInpt2:not(:placeholder-shown) {
+        border: solid 1px red !important;
+    }
+
+    .cntInptComplogin input.errInpt:not(:placeholder-shown)+svg,
+    .cntInptComplogin input.errInpt:focus+svg,
+    .cntInptComplogin input.errInpt:not(:placeholder-shown)~.labelLoginFomr,
+    .cntInptComplogin input.errInpt:focus~.labelLoginFomr {
+        fill: rgb(255, 28, 28) !important;
+        ;
+        color: red !important;
+
+    }
+
+    .cntInptComplogin input.errInpt2:not(:placeholder-shown)+svg,
+    .cntInptComplogin input.errInpt2:focus+svg,
+    .cntInptComplogin input.errInpt2:not(:placeholder-shown)~.labelLoginFomr,
+    .cntInptComplogin input.errInpt2:focus~.labelLoginFomr {
+        fill: rgb(255, 28, 28) !important;
+        ;
+        color: red !important;
+
+    }
+
+
+
+    .cntInptComplogin label {
+        position: absolute;
+        left: 50px;
+        transition: .2s ease;
+        font-weight: 600;
+    }
+
+    .cntInptComplogin svg {
+        position: absolute;
+        left: 8px;
+        font-weight: 600;
+    }
+
+    .cntInptComplogin {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 14px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .error_empty input,
+    .error_empty label,
+    .error_empty svg {
+        color: red !important;
+        fill: red !important;
+    }
+
+    .svgShowPass,
+    .svgHidePass {
+        width: 20px;
+        height: 20px;
+        position: relative !important;
+        margin: 0 !important;
+        display: none;
+        left: 0 !important;
+    }
+
+    .cntButtonsShoHidePass {
+        position: absolute;
+        display: none;
+        right: 10px;
+        cursor: pointer;
+    }
+
+
+
+    .connectWidthFireBase button img {
+        width: 25px;
+        border-radius: 5px;
+        margin-right: 12px;
+    }
+
+    .connectWidthFireBase button:hover {
+        border: solid 1px var(--border-color);
+    }
+
+    .connectWidthFireBase button {
+        width: 100%;
+        padding: 7px;
+        border: solid 1px rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .connectWidthFireBase {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        flex-direction: column;
+    }
+}

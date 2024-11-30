@@ -1,0 +1,177 @@
+.cntProfile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cntProfile h1 {
+    color: var(--text-color-2);
+}
+
+.cntProfile #btnSignOut {
+    margin-top: 40px;
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: var(--text-color);
+}
+
+.cntProfile.active {
+    animation: animatioProfile2 0.4s ease;
+
+}
+
+.cntProfile p {
+    color: var(--text-color-2);
+
+}
+
+.cntProfile .iconDrop {
+    fill: var(--text-color);
+    position: absolute;
+    top: -15px;
+    transform: rotate(180deg);
+    right: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.cntProfile {
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    width: 350px;
+    height: 400px;
+    background-color: var(--main-color-3);
+    filter: drop-shadow(0px 0px 10px var(--filter-color));
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    flex-direction: column;
+    animation: animatioProfile1 0.3s ease;
+}
+
+.titleProfilePage {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+@keyframes animatioProfile1 {
+    0% {
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+
+}
+
+@keyframes animatioProfile2 {
+    100% {
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width : 1000px) {
+    .cntProfile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .cntProfile h1 {
+        color: var(--text-color-2);
+    }
+
+    .cntProfile #btnSignOut {
+        margin-top: 40px;
+        width: 150px;
+        text-align: center;
+        padding: 6px;
+        font-size: 16px;
+        background-color: var(--main-color);
+        border-radius: 20px;
+        color: var(--text-color);
+    }
+
+    .cntProfile.active {
+        animation: animatioProfile2 0.4s ease;
+
+    }
+
+    .cntProfile p {
+        color: var(--text-color-2);
+
+    }
+
+    .cntProfile .iconDrop {
+        fill: var(--text-color);
+        position: absolute;
+        top: -8px;
+        transform: rotate(180deg);
+        right: 5px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .cntProfile {
+        position: absolute;
+        right: 10px;
+        top: 45px;
+        width: 400px;
+        height: 450px;
+        background-color: var(--main-color-3);
+        filter: drop-shadow(0px 0px 10px var(--filter-color));
+        border-radius: 10px;
+        padding: 15px;
+        z-index: 4;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 30px;
+        flex-direction: column;
+        animation: animatioProfile1 0.3s ease;
+    }
+
+    .titleProfilePage {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    @keyframes animatioProfile1 {
+        0% {
+            transform: scale(0);
+            width: 0;
+            height: 0;
+            padding: 0;
+        }
+
+    }
+
+    @keyframes animatioProfile2 {
+        100% {
+            transform: scale(0);
+            width: 0;
+            height: 0;
+            padding: 0;
+        }
+
+    }
+
+}

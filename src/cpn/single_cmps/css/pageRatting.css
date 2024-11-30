@@ -1,0 +1,341 @@
+.cntPageRating {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--shadow-color);
+}
+
+.btnClosePopup svg {
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+}
+
+.btnClosePopup {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid 1px var(--border-color);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-cpn::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+.rating-cpn::-webkit-scrollbar {
+    width: 2px;
+    background-color: #fff;
+}
+
+.rating-cpn {
+    width: 100%;
+    max-width: 800px;
+    min-height: 700px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    overflow: auto;
+    max-height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: var(--main-color);
+    transition: .2s;
+    animation: animatePortle1 .3s ease;
+}
+
+@keyframes animatePortle1 {
+    0% {
+        /* width: 0%;
+
+        max-width: 0px; */
+        min-height: 0px;
+        opacity: 0;
+        border-radius: 10px;
+        padding: 0px;
+        padding-top: 0px;
+    }
+}
+
+.RattingElemName {
+    margin-bottom: 20px;
+}
+
+.itemIMG {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.descInserFromQu svg {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.descInserFromQu {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: .6;
+    display: flex;
+
+}
+
+.Form_get_rattgin {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* -*------------------------------------------------ */
+.cntRatingQuestion textarea {
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: solid 1px var(--border-color);
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.cntRatingQuestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15px;
+    padding: 10px;
+    /* background-color: var(--main-color-2); */
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px var(--border-color);
+}
+
+/* From Uiverse.io by LeonKohli */
+.radio {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0 0 15px;
+    flex-direction: row-reverse;
+}
+
+.radio>input {
+    position: absolute;
+    appearance: none;
+}
+
+.radio>label {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.radio>label>svg {
+    fill: #666;
+    transition: fill 0.3s ease;
+}
+
+.radio>label::before,
+.radio>label::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #ff9e0b;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+    animation: particle-explosion 1s ease-out;
+}
+
+.radio>label::before {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+}
+
+.radio>label::after {
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+}
+
+.radio>label:hover::before,
+.radio>label:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.5);
+}
+
+.radio>label:hover {
+    transform: scale(1.2);
+    animation: pulse 0.6s infinite alternate;
+}
+
+.radio>label:hover>svg,
+.radio>label:hover~label>svg {
+    fill: #ff9e0b;
+    filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+    animation: shimmer 1s ease infinite alternate;
+}
+
+.radio>input:checked+label>svg,
+.radio>input:checked+label~label>svg {
+    fill: #ff9e0b;
+    filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+    animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes particle-explosion {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(255, 158, 11, 0.5));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 20px rgba(255, 158, 11, 1));
+    }
+}
+
+.radio>input:checked+label:hover>svg,
+.radio>input:checked+label:hover~label>svg {
+    fill: #e58e09;
+}
+
+.radio>label:hover>svg,
+.radio>label:hover~label>svg {
+    fill: #ff9e0b;
+}
+
+.radio input:checked~label svg {
+    fill: #ffa723;
+}
+
+/*--------------------  */
+.cntInpInswerYesNo label svg {
+    margin-right: 10px;
+}
+
+.cntInpInswerYesNo label {
+    width: 45%;
+    border: solid 1px var(--border-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cntInpInswerYesNo {
+    width: 350px;
+    /* margin: auto; */
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cntInpInswerYesNo input:checked+label svg {
+    fill: #fff;
+
+}
+
+.cntInpInswerYesNo input:checked+label {
+    color: #fff;
+    background-color: var(--blue-color);
+    border: none;
+}
+
+.cntInpInswerYesNo input {
+    display: none;
+}
+
+.cntRatingQuistionYN {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15px;
+    padding: 10px;
+    /* background-color: var(--main-color-2); */
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px var(--border-color);
+}
+
+#btnSubmitRating svg {
+    fill: var(--blue-color);
+    margin-left: 10px;
+}
+
+#btnSubmitRating {
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    color: var(--blue-color);
+    border: solid 1px var(--blue-color);
+}

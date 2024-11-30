@@ -1,0 +1,132 @@
+.cnt-Language_Comminucation {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+.cnt-listCategirys span:hover{
+    transform: scale(1.05);
+
+}
+.cnt-listCategirys span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px ;
+    min-width:23% ;
+
+    margin-top:  15px;
+    color: var(--blue-color);
+    border-radius: 20px;
+    transition: .2s;
+    white-space: nowrap;
+    background-color: var(--blue-color);
+    cursor: pointer;
+    color: #fff;
+}
+
+.cnt-listCategirys::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+.cnt-listCategirys::-webkit-scrollbar{
+    height: 3px;
+}
+.cnt-listCategirys {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color:var(--main-color-2);
+    padding: 10px;
+    width: 90%;
+    font-size: 16px !important;
+    overflow: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.cntMain_tranlates{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    overflow: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.cnt_phrase span p{
+    width: 90%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    color: var(--main-color-3);
+    text-align: center;
+    border-radius: 20px;
+}
+.cnt_phrase span{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cnt_phrase{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+.cntTypePhrase p{
+    width: 30%;
+    padding: 8px;
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 600;
+
+}
+.cntTypePhrase{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+}
+.cntImgCategory{
+    width: 250px;
+}
+.cnt_phrase span .arabicLanguage{
+    direction: rtl;
+    font-family: "Mirza", serif;
+}
+
+.catrgoryName{
+    margin-bottom: 20px;
+}
+@media screen and (max-width : 1000px) {
+    .cnt-listCategirys span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px ;
+        min-width:23% ;
+        margin-top:  15px;
+        font-size: 22px !important;
+        color: var(--blue-color);
+        border-radius: 20px;
+        transition: .2s;
+        white-space: nowrap;
+        background-color: var(--blue-color);
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    
+}

@@ -1,0 +1,159 @@
+.cntNotifications{
+    position: absolute;
+    top: 60px;
+    width: 400px;
+    max-height: 600px;
+    background-color: var(--main-color);
+    filter: drop-shadow(0px 0px 10px var(--filter-color))
+    ;border-radius: 10px;
+    padding: 15px;
+    z-index: 4 ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    padding-top:30px ;
+    animation: animaNotf .3s ease;
+}
+@keyframes animaNotf {
+    0%{
+        top: -250px;
+        transform: scale(0);
+    }
+    
+}
+.titleNotif{
+    position: absolute;
+    top: 5px;
+}
+.LIST_Notif p:hover svg{
+    fill:  var(--main-color);
+}
+.LIST_Notif p:hover{
+    background-color: var(--main-color-3);
+    color: var(--main-color);
+    transform: scale(1.02);
+
+}
+.LIST_Notif p:active{
+    transform: scale(0.98);
+}
+.LIST_Notif p{
+    margin-top: 10px;
+    background-color: var(--main-color);
+    padding: 10px;
+    font-weight: 400;
+    transition: .2s ease;
+    cursor: pointer;
+    color: var(--main-color-3);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LIST_Notif::-webkit-scrollbar-track{
+    width: 2px;
+}
+.LIST_Notif::-webkit-scrollbar{
+    width: 2px;
+}
+.LIST_Notif::-webkit-scrollbar-thumb{
+    background-color:var(--main-color-3);
+    width: 2px;
+}
+.LIST_Notif{
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: var(--main-color-2);
+    max-height: 90%;
+    overflow: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width : 1000px) {
+    .cntNotifications{
+        position: absolute;
+        top: 60px;
+        width: 400px;
+        max-height: 600px;
+        background-color: var(--main-color);
+        filter: drop-shadow(0px -10px 10px var(--filter-color))
+        ;border-radius: 10px;
+        padding: 15px;
+        z-index: 4 ;
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        padding-top:30px ;
+        animation: animaNotf .3s ease;
+    }
+    @keyframes animaNotf {
+        0%{
+            top: -250px;
+            transform: scale(0);
+        }
+        
+    }
+    .titleNotif{
+        position: absolute;
+        top: 5px;
+    }
+    .LIST_Notif p:hover svg{
+        fill:  var(--main-color);
+    }
+    .LIST_Notif p:hover{
+        background-color: var(--main-color-3);
+        color: var(--main-color);
+        transform: scale(1.02);
+    
+    }
+    .LIST_Notif p:active{
+        transform: scale(0.98);
+    }
+    .LIST_Notif p{
+        margin-top: 10px;
+        background-color: var(--main-color);
+        padding: 10px;
+        font-weight: 400;
+        transition: .2s ease;
+        cursor: pointer;
+        color: var(--main-color-3);
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .LIST_Notif::-webkit-scrollbar-track{
+        width: 2px;
+    }
+    .LIST_Notif::-webkit-scrollbar{
+        width: 2px;
+    }
+    .LIST_Notif::-webkit-scrollbar-thumb{
+        background-color:var(--main-color-3);
+        width: 2px;
+    }
+    .LIST_Notif{
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+        padding: 5px;
+        background-color: var(--main-color-2);
+        max-height: 90%;
+        overflow: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

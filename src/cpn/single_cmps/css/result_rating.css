@@ -1,0 +1,242 @@
+.ratting_ra {
+    padding: 10px;
+    margin: 10px 0 0 20px;
+    border: solid 1px var(--border-color);
+    width: 90%;
+    border-radius: 20px;
+}
+
+.aver_rate_sp span h1 {
+    margin: 0;
+}
+
+.aver_rate_sp span svg {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.aver_rate_sp strong {
+    font-weight: 600;
+}
+
+.aver_rate_sp span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aver_rate_sp {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.btn_check_rate svg {
+    fill: var(--blue-color);
+    margin-left: 8px;
+}
+
+.btn_check_rate p {
+    color: var(--blue-color);
+}
+
+.btn_check_rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    border: solid 1px var(--blue-color);
+    margin-right: 10px;
+}
+
+.CheckResult span span {
+    margin-left: 8px;
+    color: var(--blue-color);
+
+}
+
+.CheckResult span strong {
+    font-weight: 600;
+}
+
+.CheckResult span {
+    margin-top: 10px;
+
+}
+
+.CheckResult .totale_peopl_rate strong {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.CheckResult .totale_peopl_rate {
+    color: var(--blue-color);
+    font-weight: 900;
+}
+
+.CheckResult .q_y_n h5 {
+    font-weight: 600;
+}
+
+.CheckResult .q_y_n strong {
+    margin-left: 20px;
+    margin-top: 5px;
+    color: var(--blue-color);
+}
+
+.CheckResult .q_y_n {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.CheckResult {
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+    height: 700px;
+    animation: an_check .6s ease;
+}
+
+@keyframes an_check {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .ratting_ra {
+        padding: 10px;
+        margin: 10px 0 0 20px;
+        border: solid 1px var(--border-color);
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .aver_rate_sp span h1 {
+        margin: 0;
+        font-size: 20px !important;
+    }
+
+    .aver_rate_sp span svg {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .aver_rate_sp strong {
+        font-weight: 600;
+    }
+
+    .aver_rate_sp span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .aver_rate_sp {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .btn_check_rate svg {
+        fill: var(--blue-color);
+        margin-left: 8px;
+    }
+
+    .btn_check_rate p {
+        color: var(--blue-color);
+    }
+
+    .btn_check_rate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 20px;
+        width: 150px;
+        border: solid 1px var(--blue-color);
+        margin-right: 10px;
+    }
+
+    .CheckResult span span {
+        margin-left: 8px;
+        font-size: 20px !important;
+        color: var(--blue-color);
+
+    }
+
+    .CheckResult span strong {
+        font-weight: 600;
+    }
+
+    .CheckResult span {
+        font-size: 17px !important;
+        margin-top: 10px;
+
+    }
+
+    .CheckResult .totale_peopl_rate strong {
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    .CheckResult .totale_peopl_rate {
+        color: var(--blue-color);
+        font-weight: 900;
+    }
+
+    .CheckResult .q_y_n h5 {
+        font-weight: 600;
+    }
+
+    .CheckResult .q_y_n strong {
+        margin-left: 20px;
+        margin-top: 5px;
+        color: var(--blue-color);
+    }
+
+    .CheckResult .q_y_n {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .CheckResult {
+        display: flex;
+        color: var(--text-color);
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 10px;
+        height: 700px;
+        animation: an_check .6s ease;
+    }
+
+    @keyframes an_check {
+        0% {
+            height: 0;
+            opacity: 0;
+        }
+    }
+}

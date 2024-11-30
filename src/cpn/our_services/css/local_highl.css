@@ -1,0 +1,427 @@
+.CNT-service2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 800px;
+}
+
+/* ---------------------- */
+.ciltersCitys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    position: relative;
+    padding: 5px 20px;
+    min-width: 200px;
+    border-radius: 20px;
+    border: solid 1px var(--border-color);
+
+}
+
+.loader3_container .loader3 {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+}
+
+.loader3_container {
+    margin-left: 15px;
+}
+
+.cityName svg {
+    width: 30px;
+    height: 30px;
+}
+
+.cityName h1 {
+    margin-left: 10px;
+}
+
+.cityName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSelectCitty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.cntListCitys::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+
+.cntListCitys::-webkit-scrollbar {
+    width: 2px;
+}
+
+.cntListCitys span svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.cntListCitys span:hover {
+    background-color: var(--main-color-2);
+
+}
+
+.cntListCitys span {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.cntListCitys {
+    position: absolute;
+    padding-inline: 10px;
+    top: 50px;
+    width: 100%;
+    height: 400px;
+    max-height: 500px;
+    overflow-y: scroll;
+    left: 0;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    filter: drop-shadow(0 0 10px var(--filter-color));
+    min-width: 200px;
+    transition: .2s;
+    animation: aniamList .4s;
+    z-index: 2;
+}
+
+.cntListCitys.active {
+    animation: aniamList2 .4s;
+
+}
+
+
+.wantedAreaContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--main-color);
+    margin-top: 30px;
+}
+
+.cntLocalHirghInfo a svg {
+    fill: #fff;
+    margin-right: 6px;
+}
+
+.cntLocalHirghInfo a p {
+    color: #fff;
+    font-weight: 600;
+}
+
+.cntLocalHirghInfo a {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: var(--blue-color);
+    padding: 7px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.cntLocalHirghInfo img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.cntLocalHirghInfo {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding-bottom: 40px;
+    position: relative;
+
+}
+
+.lclHightName {
+    margin-bottom: 10px;
+}
+
+.cntTextHight button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.cntTextHight button {
+    margin-top: 5px;
+    padding-inline: 0;
+    color: blue;
+}
+
+.cntTextHight {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.H1Apolojgising {
+    margin: auto;
+    margin-top: 40px;
+}
+
+.localHightRating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.btnSeeMoreAboutPlace {
+    margin-top: 8px;
+    background-color: var(--main-color-3);
+    padding: 7px;
+    width: 250px;
+    border-radius: 20px;
+    color: var(--text-color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width : 1000px) {
+    .CNT-service2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        min-height: 800px;
+    }
+
+    /* ---------------------- */
+    .ciltersCitys {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 20px;
+        position: relative;
+        padding: 5px 20px;
+        min-width: 150px;
+        border-radius: 20px;
+        border: solid 1px var(--border-color);
+
+    }
+
+    .loader3_container .loader3 {
+        width: 12px;
+        height: 12px;
+        border-width: 2px;
+    }
+
+    .loader3_container {
+        margin-left: 15px;
+    }
+
+    .cityName svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cityName h1 {
+        margin-left: 10px;
+    }
+
+    .cityName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnSelectCitty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .cntListCitys::-webkit-scrollbar-thumb {
+        background-color: var(--blue-color);
+    }
+
+    .cntListCitys::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .cntListCitys span svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .cntListCitys span:hover {
+        background-color: var(--main-color-2);
+
+    }
+
+    .cntListCitys span {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 8px 10px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .cntListCitys {
+        position: absolute;
+        padding-inline: 10px;
+        top: 50px;
+        width: 100%;
+        height: 600px;
+        max-height: 500px;
+        overflow-y: scroll;
+        left: 0;
+        border-radius: 5px;
+        background-color: var(--main-color);
+        filter: drop-shadow(0 0 10px var(--filter-color));
+        min-width: 200px;
+        transition: .2s;
+        animation: aniamList .4s;
+        z-index: 2;
+    }
+
+    .cntListCitys.active {
+        animation: aniamList2 .4s;
+
+    }
+
+
+    .wantedAreaContent {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: var(--main-color);
+        margin-top: 30px;
+    }
+
+    .cntLocalHirghInfo a svg {
+        fill: #fff;
+        margin-right: 6px;
+    }
+
+    .cntLocalHirghInfo a p {
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .cntLocalHirghInfo a {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        background-color: var(--blue-color);
+        padding: 7px;
+        width: 250px;
+        border-radius: 20px;
+    }
+
+    .cntLocalHirghInfo img {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .cntLocalHirghInfo span{
+        font-size: 18px !important;
+    }
+    .cntLocalHirghInfo {
+        width: 100%;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        padding-bottom: 40px;
+        position: relative;
+
+    }
+
+    .lclHightName {
+        margin-bottom: 10px;
+    }
+
+    .cntTextHight button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cntTextHight button {
+        margin-top: 5px;
+        padding-inline: 0;
+        color: blue;
+    }
+
+    .cntTextHight {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .H1Apolojgising {
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .localHightRating {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .btnSeeMoreAboutPlace {
+        margin-top: 8px;
+        background-color: var(--main-color-3);
+        padding: 7px;
+        width: 250px;
+        border-radius: 20px;
+        color: var(--text-color-2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

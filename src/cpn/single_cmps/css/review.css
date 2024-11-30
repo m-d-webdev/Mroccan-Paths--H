@@ -1,0 +1,189 @@
+.cntReview{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    align-items: flex-start;
+    min-height: 200px;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.UserInfo img{
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 8px;
+    width: 40px;
+}
+.UserInfo span p{
+    margin-top: 6px;
+}
+.UserInfo span{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.UserInfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cntellingText svg{
+    width: 20px;
+    height: 20px;
+    fill: rgb(0, 38, 255);
+    margin-right: 3px;
+    cursor: pointer;
+}
+.cntellingText{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    border: solid 1px var(--border-color);
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+.cntellingText .FilleingText{
+    padding: 5px;
+    color: var(--blue-color);
+    font-weight: 900;
+}
+.cntContentReview .TextReview{
+    line-height: 20px;
+}
+
+.cntContentReview{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+.InterReview svg:hover{
+    opacity: 1;
+}
+.InterReview svg{
+    width: 23px;
+    opacity: .5;
+    cursor: pointer;
+    height: 23px;
+}
+
+.InterReview svg.active{
+    fill: #053fff !important;
+    stroke-width: 40px !important;
+    stroke: #053fff !important;
+    opacity: 1;
+
+}
+.InterReview{
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+@media screen and (max-width : 1000px) {
+    .cntReview{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+        background-color: var(--main-color);
+        border-radius: 10px;
+        align-items: flex-start;
+        min-height: 200px;
+        min-width: 0;
+        max-width: none;
+        width: 100%;
+    }
+    
+    .UserInfo img{
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+        margin-right: 8px;
+        width: 30px;
+    }
+    .UserInfo span p{
+        margin-top: 6px;
+    }
+    .UserInfo span{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .UserInfo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .cntellingText svg{
+        width: 20px;
+        height: 20px;
+        fill: rgb(0, 38, 255);
+        margin-right: 3px;
+        cursor: pointer;
+    }
+    .cntellingText{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        border: solid 1px var(--border-color);
+        padding: 3px 10px;
+        border-radius: 8px;
+    }
+    .cntellingText .FilleingText{
+        padding: 5px;
+        color:var(--blue-color);
+        font-weight: 900;
+    }
+    .cntContentReview .TextReview{
+        line-height: 20px;
+    }
+    
+    .cntContentReview{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .InterReview svg:hover{
+        opacity: 1;
+    }
+    .InterReview svg{
+        width: 23px;
+        opacity: .5;
+        cursor: pointer;
+        height: 23px;
+    }
+    
+    .InterReview svg.active{
+        fill: #053fff !important;
+        stroke-width: 40px !important;
+        stroke: #053fff !important;
+        opacity: 1;
+    
+    }
+    .InterReview{
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: flex;
+        padding-right: 20px;
+        margin-top: 15px;
+    }
+}

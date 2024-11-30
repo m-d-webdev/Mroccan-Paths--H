@@ -1,0 +1,22 @@
+.btn-rate-elem svg{
+    fill: gold;
+    margin-right:10px ;
+}
+.btn-rate-elem p{
+    color: rgb(215, 183, 1);
+}
+.btn-rate-elem {
+    display: flex;
+    border:solid 1px gold;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    align-self: flex-end;
+    /* width: 200px; */
+    padding: 4px ;
+    width: 120px;
+    border-radius: 20px;
+ 
+    filter: drop-shadow( 0 0 1px rgba(255, 213, 0, 0.235));
+}

@@ -1,0 +1,258 @@
+.cnt-findGuide_cpn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tour-guide-card img {
+    width: 300px;
+    height: 300px;
+    object-position: top;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.tour-guide-card h1 {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.tour-guide-card p strong {
+    font-weight: 600;
+    margin: 0 5px;
+    color: var(--blue-color);
+}
+
+.tour-guide-card p {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.tour-guide-card {
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    transition: .3s;
+    filter: drop-shadow(0px 0px 10px var(--filter-color));
+    cursor: pointer;
+}
+
+.list-tour-guides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 8px;
+    color: green;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid green;
+    margin-top: 20px;
+    cursor: pointer;
+
+
+}
+
+.contact-whatsapp svg {
+    fill: none;
+    margin-right: 10px;
+
+}
+
+.contactEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid var(--text-color);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contactEmail svg {
+    fill: none;
+    margin-right: 10px;
+}
+
+.contactPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    color: var(--blue-color);
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid var(--blue-color);
+    margin-top: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.contactPhone .IcooneCopyPhoenN {
+    position: absolute;
+    right: 5px;
+}
+
+.contactPhone svg {
+    fill: var(--blue-color);
+    margin-right: 10px;
+}
+
+.btnFindGuide {
+    margin: auto;
+    margin-top: 60px;
+}
+
+@media screen and (max-width : 1000px) {
+    .cnt-findGuide_cpn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .tour-guide-card img {
+        width: 600px;
+
+        height: 600px;
+        object-position: center;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .tour-guide-card h1 {
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .tour-guide-card p strong {
+        font-weight: 600;
+        margin: 0 5px;
+        color: var(--blue-color);
+    }
+
+    .tour-guide-card p {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .tour-guide-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--main-color);
+        transition: .3s;
+        filter: drop-shadow(0px 0px 10px var(--filter-color));
+        cursor: pointer;
+    }
+
+    .list-tour-guides {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+
+    .contact-whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        padding: 8px;
+        color: green;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 1px solid green;
+        margin-top: 20px;
+        cursor: pointer;
+
+
+    }
+
+    .contact-whatsapp svg {
+        fill: none;
+        margin-right: 10px;
+
+    }
+
+    .contactEmail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        padding: 8px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 1px solid var(--text-color);
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .contactEmail svg {
+        fill: none;
+        margin-right: 10px;
+    }
+
+    .contactPhone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        color: var(--blue-color);
+        padding: 8px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 1px solid var(--blue-color);
+        margin-top: 50px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .contactPhone .IcooneCopyPhoenN {
+        position: absolute;
+        right: 5px;
+    }
+
+    .contactPhone svg {
+        fill: var(--blue-color);
+        margin-right: 10px;
+    }
+
+    .btnFindGuide {
+        margin: auto;
+        margin-top: 60px;
+    }
+
+}

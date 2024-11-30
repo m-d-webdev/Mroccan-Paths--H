@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins-MediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+  /* font-weight: normal !important; */
+}
+
+:root {
+  --main-color: #fff;
+  --main-color-2: #edf0f09d;
+  --main-color-3: #000000;
+  --back-colo-lint: #4dc7ff09;
+  --text-color: #000000;
+  --text-color-2: #ffffff;
+  --link-color: #646cff;
+  --focus-border-color: #2164ff;
+  --filter-color: #00000017;
+  --border-color: #00000036;
+  --border-color-focus: #0000001b;
+  --blue-color: #1a73e8;
+  --shadow-color: #00000060;
+}
+
+.darkMode {
+  --main-color: #000000;
+  --main-color-2: #1b1b1b;
+  --main-color-3: #ffffff;
+  --back-colo-lint: #4dc7ff23;
+  --focus-border-color: #2e6dff;
+  --text-color: #fff;
+  --text-color-2: #000000;
+  --link-color: #c6c8ff;
+  --shadow-color: #fffcfc5b;
+  --filter-color: #8282825c;
+  --border-color: #ffffff3b;
+  --border-color-focus: #ffffff17;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: var(--main-color-2);
+  min-height: 800px;
+  padding: 5px;
+}
+
+
+a {
+  font-weight: 900;
+  color: var(--text-color);
+  text-decoration: inherit;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 15px !important;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px !important;
+  color: var(--text-color);
+}
+
+label {
+  color: var(--text-color);
+  font-size: 15px !important;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+}
+
+h1 {
+  color: var(--text-color);
+  /* line-height: 1.1; */
+  font-weight: 900;
+  font-size: 20px !important ;
+}
+strong{
+  white-space: nowrap;
+}
+h2 {
+  color: var(--text-color);
+  /* font-weight: 600; */
+}
+
+h3 {
+  color: var(--text-color);
+}
+
+h4 {
+  color: var(--text-color);
+}
+
+h5 {
+  color: var(--text-color);
+}
+
+h6 {
+  color: var(--text-color);
+}
+
+p {
+  font-size: 16px !important;
+  color: var(--text-color);
+}
+
+
+
+button:active {
+  transform: scale(0.95);
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 15px ;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+svg {
+  stroke: var(--text-color);
+  width: 25px;
+  height: 25px;
+  stroke-width: 1.5px;
+  fill: var(--text-color);
+  transition: fill 0.25s;
+}
+
+/* 
+import TenDone from "./single_cmps/TenDone.jsx";
+ const [isTenDoneVisible, setTenDoneVisible] = useState(false);
+const [isDone, setIsDone] = useState({
+        isDone: false,
+        Message: ""
+    });
+    // setIsDone({
+    //     isDone: false,
+    //     Message: ""
+    // })
+    // ToggleTenVisibility();
+    function ToggleTenVisibility() {
+        setTenDoneVisible(!isTenDoneVisible);
+    };
+     {isTenDoneVisible && <TenDone Done={isDone} setTenDoneVisible={ToggleTenVisibility} />}
+
+ 
+
+
+
+HTML: <div class="loader"></div> 
+
+/let loaderContainer = document.createElement("div");
+let loaderElemParent = document.createElement("div");
+let loader = document.createElement("div");
+loaderContainer.className = "cntLoader";
+loaderElemParent.className = "LoaderParent";
+loader.className = "loader2";
+loaderElemParent.appendChild(loader);
+loaderContainer.appendChild(loaderElemParent);
+[pagerRef].current.appendChild(loaderContainer);
+ */
+
+
+
+.cntLoader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000038;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.LoaderParent {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  background-color: var(--main-color);
+  filter: drop-shadow(0 0 10px var(--filter-color));
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.LoaderParent::after {
+  content: "Just a moment, we’re working on it....";
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+
+.loader2 {
+  width: 50px;
+  aspect-ratio: 1;
+  --c: no-repeat radial-gradient(farthest-side, #514b82 92%, #0000);
+  background:
+    var(--c) 50% 0,
+    var(--c) 50% 100%,
+    var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 10px 10px;
+  animation: l18 1s infinite;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.loader2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: 3px;
+  background: repeating-conic-gradient(#0000 0 35deg, #514b82 0 90deg);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
+  border-radius: 50%;
+}
+
+@keyframes l18 {
+  100% {
+    transform: rotate(.5turn)
+  }
+}
+
+/* ----------------------------------- */
+
+
+@keyframes aniamList {
+  0% {
+    min-width: none;
+    height: 0;
+    /* width: 0%; */
+    top: 0;
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes aniamList2 {
+  100% {
+    min-width: none;
+    height: 0;
+    width: 0%;
+    top: 0;
+    transform: scale(0);
+  }
+}
+
+/* ----------------------------------- */
+
+
+.loader {
+  width: fit-content;
+  font-size: 20px !important;
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-color);
+  background: conic-gradient(var(--text-color) 0 0) 0/0% 100% no-repeat text;
+  animation: l1 1s linear infinite;
+  margin: auto;
+}
+
+.loader:before {
+  content: "Loading";
+}
+
+@keyframes l1 {
+  to {
+    background-size: 120% 100%
+  }
+}
+
+
+.blue-btn svg {
+  fill: #fff;
+}
+
+.blue-btn {
+  padding: 8px;
+  background-color: var(--blue-color);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader3 {
+  width: 30px;
+  height: 30px;
+  border: 4px solid var(--main-color-3);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  /* position: absolute; */
+  margin: auto;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width : 1000px) {
+
+  p{
+    font-size: 20px  !important;
+  }
+  svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+button p{
+  font-size: 20px !important;
+}
+button {
+  font-size: 20px;
+}
+  #root {
+    padding: 0;
+  }
+}
+
+.display_block {
+
+  display: block;
+}

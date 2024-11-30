@@ -1,0 +1,313 @@
+.cnt_accommandationDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    /* min-height: 800px; */
+}
+
+.cnt_accommo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center;
+}
+
+.cnt_accommo-card .tYPEaCCOM h4 {
+    color: var(--blue-color);
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.cnt_accommo-card .tYPEaCCOM SVG {
+    fill: var(--blue-color);
+}
+
+.cnt_accommo-card .tYPEaCCOM {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cnt_accommo-card .PriceAccom SVG {
+    fill: rgb(20, 173, 0);
+}
+
+.cnt_accommo-card .PriceAccom {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cnt_accommo-card .PriceAccom h4 p {
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+.cnt_accommo-card .PriceAccom h4 {
+    color: rgb(20, 173, 0);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 7px;
+}
+
+.cnt_accommo-card .rattingAccom {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cnt_accommo-card .rattingAccom h4 p {
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+.cnt_accommo-card .rattingAccom h4 {
+    color: rgb(206, 199, 7);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 7px;
+}
+
+.cnt_accommo-card .rattingAccom SVG {
+    fill: rgb(253, 228, 2);
+}
+
+.cnt_accommo-card h1 {
+    margin-bottom: 10px;
+}
+
+.cnt_accommo-card p {
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.cnt_accommo-card #BtnBookHotel svg {
+    fill: #fff !important;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    stroke: #fff;
+}
+
+.cnt_accommo-card #BtnBookHotel {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(255, 25, 25);
+}
+
+.cnt_accommo-card a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.cnt_accommo-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    /* height: 400px; */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+.cntHotelesFounded {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 10px;
+    /* background-color: var(--main-color-2); */
+    border-radius: 10px;
+}
+
+.TypeOfAccomSection {
+    margin: 15px 15px;
+    font-weight: 600;
+}
+
+.cntHousesFounded {
+    margin-top: 20px;
+}
+
+.cntAppartementsFounded {
+    margin-top: 20px;
+}
+
+@media screen and (max-width : 1000px) {
+    .cnt_accommandationDiv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        /* min-height: 800px; */
+    }
+
+    .cnt_accommo-card img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 5px;
+        object-position: center;
+    }
+
+    .cnt_accommo-card .tYPEaCCOM h4 {
+        color: var(--blue-color);
+        font-weight: 600;
+        margin-left: 7px;
+    }
+
+    .cnt_accommo-card .tYPEaCCOM SVG {
+        fill: var(--blue-color);
+    }
+
+    .cnt_accommo-card .tYPEaCCOM {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .cnt_accommo-card .PriceAccom SVG {
+        fill: rgb(20, 173, 0);
+    }
+
+    .cnt_accommo-card .PriceAccom {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .cnt_accommo-card .PriceAccom h4 p {
+        margin-left: 10px;
+        color: var(--text-color);
+    }
+
+    .cnt_accommo-card .PriceAccom h4 {
+        color: rgb(20, 173, 0);
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 7px;
+    }
+
+    .cnt_accommo-card .rattingAccom {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .cnt_accommo-card .rattingAccom h4 p {
+        margin-left: 10px;
+        color: var(--text-color);
+    }
+
+    .cnt_accommo-card .rattingAccom h4 {
+        color: rgb(206, 199, 7);
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 7px;
+    }
+
+    .cnt_accommo-card .rattingAccom SVG {
+        fill: rgb(253, 228, 2);
+    }
+
+    .cnt_accommo-card h1 {
+        font-size: 28px !important;
+        margin-bottom: 10px;
+    }
+
+    .cnt_accommo-card p {
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .cnt_accommo-card #BtnBookHotel svg {
+        fill: #fff !important;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        stroke: #fff;
+    }
+
+    .cnt_accommo-card #BtnBookHotel {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: rgb(255, 25, 25);
+    }
+
+    .cnt_accommo-card a {
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .cnt_accommo-card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        /* height: 400px; */
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: var(--main-color);
+    }
+
+    .cntHotelesFounded {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 10px;
+        /* background-color: var(--main-color-2); */
+        border-radius: 10px;
+    }
+
+    .TypeOfAccomSection {
+        margin: 15px 15px;
+        font-weight: 600;
+    }
+
+    .cntHousesFounded {
+        margin-top: 20px;
+    }
+
+    .cntAppartementsFounded {
+        margin-top: 20px;
+    }
+
+}
