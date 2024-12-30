@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'Poppins';
   src: url('./Poppins-MediumItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 * {
@@ -10,6 +8,8 @@
   font-family: 'Poppins', sans-serif;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
+
 }
 
 body {
@@ -62,13 +62,13 @@ body {
 
 
 a {
-  font-weight: 900;
+  font-weight: 600;
   color: var(--text-color);
   text-decoration: inherit;
   text-align: center;
   display: flex;
+  font-size: 14px;
   justify-content: center;
-  font-size: 15px !important;
   align-items: center;
 }
 
@@ -76,14 +76,14 @@ input {
   background-color: transparent;
   border: none;
   outline: none;
+  font-size: 15px;
   padding: 5px;
-  font-size: 16px !important;
   color: var(--text-color);
 }
 
 label {
+  font-size: 14px;
   color: var(--text-color);
-  font-size: 15px !important;
 }
 
 textarea::-webkit-scrollbar {
@@ -92,25 +92,29 @@ textarea::-webkit-scrollbar {
 
 textarea {
   background-color: transparent;
+  font-size: 15px;
   border: none;
   color: var(--text-color);
 }
 
 h1 {
   color: var(--text-color);
-  /* line-height: 1.1; */
-  font-weight: 900;
-  font-size: 20px !important ;
+  font-size: 18px;
 }
-strong{
+
+strong {
+  font-size: 14px;
   white-space: nowrap;
 }
+
 h2 {
   color: var(--text-color);
+  font-size: 16px;
   /* font-weight: 600; */
 }
 
 h3 {
+  font-size: 15px;
   color: var(--text-color);
 }
 
@@ -127,7 +131,7 @@ h6 {
 }
 
 p {
-  font-size: 16px !important;
+  font-size: 14px;
   color: var(--text-color);
 }
 
@@ -142,8 +146,6 @@ button {
   border: none;
   background-color: transparent;
   color: var(--text-color);
-  font-size: 15px ;
-
   cursor: pointer;
   transition: 0.2s;
 }
@@ -355,23 +357,18 @@ loaderContainer.appendChild(loaderElemParent);
 
 @media screen and (max-width : 1000px) {
 
-  p{
-    font-size: 20px  !important;
-  }
+
   svg {
-    width: 40px !important;
-    height: 40px !important;
+    width: 20px ;
+    height: 20px ;
+
   }
-button p{
-  font-size: 20px !important;
-}
-button {
-  font-size: 20px;
-}
   #root {
     padding: 0;
   }
 }
+
+
 
 .display_block {
 

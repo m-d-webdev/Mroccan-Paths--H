@@ -145,7 +145,6 @@
     .cntInroService p {
         position: absolute;
         top: 20px;
-        font-size: 25px !important;
         z-index: 2;
         color: #fff;
         text-align: center;

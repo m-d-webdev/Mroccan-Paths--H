@@ -379,7 +379,6 @@
         border: solid 1px transparent;
         color: var(--text-color-2);
         margin-top: 10px;
-        font-size: 25px !important;
         padding: 10px;
         transition: .2s;
         width: 100%;

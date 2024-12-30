@@ -77,7 +77,6 @@
     .spanInfoDetailCity p strong{
         font-weight: 600;
         margin-right: 8px;
-        font-size: 25px !important;
     }
     .spanInfoDetailCity p svg{
         width: 20px;
@@ -146,7 +145,6 @@
         margin-top: 20px;
         background-color: var(--blue-color);
         color: white;
-        font-size: 25px !important;
         padding: 10px 15px;
         border-radius: 5px;
     }
