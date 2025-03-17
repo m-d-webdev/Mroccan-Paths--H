@@ -4,7 +4,9 @@ A website that provides essential services for tourists, including information o
 /-----------------------------
 
 In this project, I used React, Firebase, jQuery, and CSS to build a seamless and user-friendly interface. The platform also includes the possibility to contact people directly via their WhatsApp or email for personalized assistance.
-
+/-----
+Hosted on netlify
+## Link to website [Mroroccan Paths ](https://moroccan-paths.netlify.app/)
 /---------
 It is responsive to different devices.
 ![Screenshot 2024-11-30 102245](https://github.com/user-attachments/assets/a539319a-2bd3-475e-9571-643077379c6a)
